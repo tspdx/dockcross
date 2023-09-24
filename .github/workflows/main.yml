@@ -699,6 +699,26 @@ jobs:
               cpython: "yes",
               cpython_arg: "--host=powerpc64le-unknown-linux-gnu --target=powerpc64le-unknown-linux-gnu",
             }
+          # Linux ppc64le-lts images
+          - {
+              image: "linux-ppc64le-lts",
+              stockfish: "yes",
+              stockfish_arg: "ARCH=ppc-64",
+              ninja: "yes",
+              ninja_arg: "",
+              openssl: "yes",
+              openssl_arg: "linux-ppc64le",
+              C: "yes",
+              C_arg: "",
+              C-Plus-Plus: "yes",
+              C-Plus-Plus_arg: "",
+              fmt: "yes",
+              fmt_arg: "",
+              raylib: "no",
+              raylib_arg: "",
+              cpython: "yes",
+              cpython_arg: "--host=powerpc64le-unknown-linux-gnu --target=powerpc64le-unknown-linux-gnu",
+            }
           # Linux m68k images
           - {
               image: "linux-m68k-uclibc",
